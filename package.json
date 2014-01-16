@@ -10,5 +10,9 @@
     "jade": "*",
     "underscore": "*",
     "underscore.inflections": "*"
+  },
+
+  "scripts": {
+    "build-indices": "./scripts/build_indices.js"
   }
 }
