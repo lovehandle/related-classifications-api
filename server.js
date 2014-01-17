@@ -26,7 +26,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/v0/q', api.v0.query.get);
+app.get('/v0/:dataset/:code', api.v0.query.get);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
